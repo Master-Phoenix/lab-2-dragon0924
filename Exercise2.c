@@ -18,7 +18,21 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	
 	//your codes here
+	int i, n;
+	int factorial = 1;
+	n = testcase;	
+	if ((n % 2) != 0) {
+		for (i = 1; i<= n; i += 2){
+			factorial *= i;
+		}
+	}
+	else{
+		for (i = 2; i <= n; i += 2){
+			factorial *= i;
+		}
+	}
 	
+	printf("%d", factorial);
 	
 	return 0;
 }
