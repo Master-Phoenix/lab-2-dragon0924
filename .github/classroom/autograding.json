@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Ex 1 .c",
+      "setup": "gcc Exercise1.c -o ex1c.out",
+      "run": "./ex1c.out 32.5",
+      "input": "",
+      "output": "251500",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 1 .cpp",
+      "setup": "g++ -std=c++11 Exercise1.cpp -o ex1cpp.out",
+      "run": "./ex1cpp.out 32.5",
+      "input": "",
+      "output": "251500",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 2 .c",
+      "setup": "gcc Exercise2.c -o ex2c.out",
+      "run": "./ex2c.out 11",
+      "input": "",
+      "output": "10395",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 2 .cpp",
+      "setup": "g++ -std=c++11 Exercise2.cpp -o ex2cpp.out",
+      "run": "./ex2cpp.out 11",
+      "input": "",
+      "output": "10395",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 3 .c",
+      "setup": "gcc Exercise3.c -o ex3c.out",
+      "run": "./ex3c.out 24",
+      "input": "",
+      "output": "2 2 2 3",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 3 .cpp",
+      "setup": "g++ -std=c++11 Exercise3.cpp -o ex3cpp.out",
+      "run": "./ex3cpp.out 24",
+      "input": "",
+      "output": "2 2 2 3",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 4 .c",
+      "setup": "gcc Exercise4.c -o ex4c.out",
+      "run": "./ex4c.out 8 7 9 2 1 5 2 0",
+      "input": "",
+      "output": "2 7 8 9 5 2 1 0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ex 4 .cpp",
+      "setup": "g++ -std=c++11 Exercise4.cpp -o ex4cpp.out",
+      "run": "./ex4cpp.out 8 7 9 2 1 5 2 0",
+      "input": "",
+      "output": "2 7 8 9 5 2 1 0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
