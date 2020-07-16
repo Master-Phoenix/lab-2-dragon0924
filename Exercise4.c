@@ -19,18 +19,17 @@ int main(int argc, char *argv[]) {
 	}
 	
 	//your codes here
-	int i,j,n,tmp,a[100000];
-	a = testcase;
+	int i,j,n,tmp;
 	n = argc;
 	for (i=1;i<=n/2;i++)
 	{
 		for (j=i+1;j<=n/2;j++)
 		{
-			if (a[i]>a[j])
+			if (testcase[i]>testcase[j])
 			{
-				tmp=a[i];
-				a[i]=a[j];
-				a[j]=tmp;
+				tmp=testcase[i];
+				testcase[i]=testcase[j];
+				testcase[j]=tmp;
 			}
 		}
 	}
@@ -38,19 +37,18 @@ int main(int argc, char *argv[]) {
 	{
 		for (j=i+1;j<=n;j++)
 		{
-			if (a[i]<a[j])
+			if (testcase[i]<testcase[j])
 			{
-				tmp=a[i];
-				a[i]=a[j];
-				a[j]=tmp;
+				tmp=testcase[i];
+				testcase[i]=testcase[j];
+				testcase[j]=tmp;
 			}
 		}
 	}
 	for (i=1;i<=n;i++)
 	{
-		printf("%d ",a[i]);
+		printf("%d ",testcase[i]);
 	}
-	printf("\n");
 	
 	return 0;
 }
