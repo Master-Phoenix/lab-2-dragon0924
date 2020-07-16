@@ -13,13 +13,14 @@ ______________________________________
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase[argc],i;
+	int testcase[argc];
+	int i;
 	for(i=1; i<=argc;i++){
 		testcase[i] = atoi(argv[i]);
 	}
 	
 	//your codes here
-	int i,j,n,tmp;
+	int j,n,tmp;
 	n = argc;
 	for (i=1;i<=n/2;i++)
 	{
