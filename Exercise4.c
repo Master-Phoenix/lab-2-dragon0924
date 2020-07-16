@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase[argc-1];
 	int i;
-	for(i=1; i<=argc;i++){
-		testcase[i] = atoi(argv[i]);
+	for(i=0; i<argc;i++){
+		testcase[i] = atoi(argv[i+1]);
 	}
 	
 	//your codes here
