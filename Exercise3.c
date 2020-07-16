@@ -20,8 +20,8 @@ int main(int argc, char *argv[]) {
 	{
 		while (n%i==0)
 		{
-			if (h==0) printf("%d",i);
-			else printf("%d",i);
+			if (h==0) printf("%d ",i);
+			else printf("%d ",i);
 			n/=i;
 			h++;
 		}
