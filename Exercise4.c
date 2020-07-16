@@ -20,36 +20,40 @@ int main(int argc, char *argv[]) {
 	}
 	
 	//your codes here
-	int j,n,tmp;
-	n = argc-1;
-	for (i=1;i<=n/2;i++)
+	int swapped;
+	int n = argc-1;
+	do
 	{
-		for (j=i+1;j<=n/2;j++)
-		{
-			if (testcase[i]>testcase[j])
-			{
-				tmp=testcase[i];
-				testcase[i]=testcase[j];
-				testcase[j]=tmp;
-			}
-		}
-	}
-	for (i=n/2+1;i<=n;i++)
+	swapped = 0;
+	for(i = 0; i < n / 2 - 1; ++ i)
 	{
-		for (j=i+1;j<=n;j++)
-		{
-			if (testcase[i]<testcase[j])
-			{
-				tmp=testcase[i];
-				testcase[i]=testcase[j];
-				testcase[j]=tmp;
-			}
-		}
+	    if(testcase[i] > testcase[i+1])
+	    {
+		int temp = testcase[i];
+		testcase[i] = testcase[i+1];
+		testcase[i+1] = temp;
+		swapped = 1;
+	    }
 	}
-	for (i=1;i<=n;i++)
+	}
+	while (swapped);
+	do
 	{
-		printf("%d ",testcase[i]);
+	swapped = 0;
+	for(i = n / 2; i < n - 1; ++ i)
+	{
+	    if(testcase[i] < testcase[i+1])
+	    {
+		int temp = testcase[i];
+		testcase[i] = testcase[i+1];
+		testcase[i+1] = temp;
+		swapped = 1;
+	    }
 	}
-	
+	}
+	while (swapped);
+
+	for(i = 0; i < n; ++i) printf("%d ", testcase[i]);
+
 	return 0;
 }
