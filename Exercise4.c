@@ -13,7 +13,7 @@ ______________________________________
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase[argc];
+	int testcase[argc-1];
 	int i;
 	for(i=1; i<=argc;i++){
 		testcase[i] = atoi(argv[i]);
@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 	
 	//your codes here
 	int j,n,tmp;
-	n = argc;
+	n = argc-1;
 	for (i=1;i<=n/2;i++)
 	{
 		for (j=i+1;j<=n/2;j++)
