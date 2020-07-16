@@ -20,8 +20,10 @@ int main(int argc, char *argv[]) {
 	//your codes here
 	float dis = testcase;
 	if (dis<=2) printf("15000");
-	else if (dis<=30) printf("%f",15000+2000*4*(dis-2));
-	else printf("%f",15000+2000*4*(30-2)+5000*(dis-30));
+	int u30 = 15000+2000*4*(dis-2);
+	int a30 = 15000+2000*4*(30-2)+5000*(dis-30);
+	else if (dis<=30) printf("%d",u30);
+	else printf("%d", a30);
 	
 	return 0;
 }
