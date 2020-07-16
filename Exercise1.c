@@ -18,7 +18,10 @@ int main(int argc, char *argv[]) {
 	float testcase = atof(argv[1]);
 	
 	//your codes here
-	
+	float dis = testcase;
+	if (dis<=2) printf("15000");
+	else if (dis<=30) printf("%d",15000+2000*4*(dis-2));
+	else printf("%d",15000+2000*4*(30-2)+5000*(dis-30));
 	
 	return 0;
 }
